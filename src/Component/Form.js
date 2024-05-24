@@ -11,8 +11,11 @@ function FormPage() {
   const addTask = (e) =>{
     e.preventDefault();
     console.log(title,description);
-  }
-
+ 
+   title();
+   description();
+  };
+ 
   return (
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
