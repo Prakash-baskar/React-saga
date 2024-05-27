@@ -12,11 +12,11 @@ function FormPage() {
     e.preventDefault();
     console.log(title,description);
  
-   title();
-   description();
+   
   };
  
   return (
+    <section className='my-5'>
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Task Tittle</Form.Label>
@@ -33,6 +33,7 @@ function FormPage() {
       </Button>
       </div>
     </Form>
+    </section>
   );
 }
 
