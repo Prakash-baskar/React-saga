@@ -27,7 +27,7 @@ const TableList = () => {
               <td>1</td>
               <td>Jacob</td>
               <td>Thornton</td>
-              <td><button onClick={() =>UpdateTask()}>Edit</button> <button>Delete</button></td>
+              <td><button   onClick={() =>UpdateTask()}>Edit</button> <button>Delete</button></td>
             </tr>
           </tbody>
         </Table>
