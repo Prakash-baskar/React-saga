@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,36 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.formhead{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+form{
+ border: 1px solid;
+ padding: 10px;
+ border-radius: 5px;
+}
+.submit{
+  text-align: end;
+  padding-top: 4px;
+  
+}
+.sub{
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.nav{
+  padding: 8px;
+  background-color: rgb(242, 245, 242);
+  display: flex;
+  justify-content: center;
 }
