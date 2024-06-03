@@ -2,6 +2,8 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { addItem } from './Action'
+import { useNavigate } from 'react-router-dom'
+
 
 
 const Form = () => {
@@ -9,10 +11,12 @@ const Form = () => {
     const [name,setName] = useState('')
     const [password,setPassword] = useState('')
     const dispatch = useDispatch();
+    const navigate= useNavigate();
 
      const handleSubmit = (e) =>{
         e.preventDefault();
         dispatch(addItem({name,password}))
+        navigate('/Table');
         setName("");
         setPassword('');
       
@@ -24,7 +28,7 @@ const Form = () => {
       </div>
     <div className='formhead'>
       <form onSubmit={ handleSubmit}>
-        <h2> Register Now</h2>
+        <h2 className='register'> Register </h2>
         <div>
             <label>Name</label><br></br>
             <input value={name} onChange={(e)=>setName(e.target.value)}></input>

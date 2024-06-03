@@ -1,1 +1,1 @@
-export const MY_SAMPLE_URL = `https://65adedce1dfbae409a739505.mockapi.io/sample/sample`;
+export const API = `https://65adedce1dfbae409a739505.mockapi.io/sample/sample`;

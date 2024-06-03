@@ -1,18 +1,26 @@
-import axios from "axios";
-import { ADD_ITEM } from "./Type";
-import { MY_SAMPLE_URL } from "./service/Api";
+// import axios from "axios";
+// import { ADD_ITEM } from "./Type";
+// import { MY_SAMPLE_URL } from "./service/Api";
 
 
-export const addItem = (user) => { 
-    
-    return async (dispatch) => {
-        try {
-            const response = await axios.post(`${MY_SAMPLE_URL}`, user);
-            console.log(response);
-            dispatch({ type: ADD_ITEM, payload: response.data });
-        } catch (error) {
+import {  ADD_ITEM_REQUEST, GET_BY_ID_REQUEST, GET_ITEMS_REQUEST } from "./Type"
 
-            console.error("Error adding item:", error);
-        }
-    };
-};
+
+
+export const addItem = (user) =>({
+
+type:ADD_ITEM_REQUEST,
+payload:user
+
+
+})
+
+export const getItem = () =>({
+    type:GET_ITEMS_REQUEST,
+
+})
+
+export const getById = (id) =>({
+    type:GET_BY_ID_REQUEST,
+    payload:id,
+})
